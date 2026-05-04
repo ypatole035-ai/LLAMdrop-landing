@@ -45,8 +45,8 @@ function TerminalBlock({ command, label }: { command: string; label: string }) {
   return (
     <div className="w-full relative">
       <div className="text-xs text-muted-foreground font-mono mb-2 uppercase tracking-widest">{label}</div>
-      <div className="bg-card border border-border p-4 pr-12 font-mono text-sm text-primary overflow-x-auto relative shadow-[4px_4px_0_0_hsl(var(--primary)/0.18)] transition-transform hover:-translate-y-0.5">
-        <span className="text-muted-foreground select-none">$ </span>{command}
+      <div className="bg-card border border-border p-4 pr-12 font-mono text-sm text-primary overflow-x-auto max-w-full relative shadow-[4px_4px_0_0_hsl(var(--primary)/0.18)] transition-transform hover:-translate-y-0.5">
+        <span className="text-muted-foreground select-none">$ </span><span className="break-all">{command}</span>
         <button
           onClick={() => { navigator.clipboard.writeText(command); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
           className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors focus:outline-none"
