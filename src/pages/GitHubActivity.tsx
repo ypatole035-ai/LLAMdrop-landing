@@ -295,7 +295,7 @@ export default function GitHubActivity() {
         backdropFilter: "blur(8px)",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <a href="/" style={{
+          <a href="/LLAMdrop-landing/" style={{
             display: "flex", alignItems: "center", gap: 6,
             color: "hsl(0 0% 60%)", textDecoration: "none",
             fontFamily: "JetBrains Mono, monospace", fontSize: 12,
