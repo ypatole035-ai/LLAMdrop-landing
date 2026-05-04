@@ -1589,7 +1589,8 @@ export default function Home() {
             <Github className="w-4 h-4" />
             GitHub
           </a>
-        </div>
+        
+				<a href="activity" className="flex items-center gap-2 text-sm font-mono border border-border px-4 py-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">Activity</a></div>
       </nav>
 
       {/* Hero */}
