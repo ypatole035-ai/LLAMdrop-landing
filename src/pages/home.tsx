@@ -340,7 +340,7 @@ function BeforeAfterTerminal() {
               <X className="w-3.5 h-3.5 text-red-400" />
               <span className="text-xs font-mono text-red-400 uppercase tracking-widest">Without llamdrop</span>
             </div>
-            <div className="border border-red-400/20 bg-[#0a0505] flex flex-col overflow-hidden" style={{ height: "clamp(480px, 70vh, 600px)" }}>
+            <div className="border border-red-400/20 bg-[#0a0505] flex flex-col overflow-hidden" style={{ height: "clamp(550px, 80vh, 700px)" }}>
               <div className="flex items-center gap-2 px-3 py-2 border-b border-red-400/15 bg-black/40 flex-shrink-0">
                 <span className="w-2 h-2 rounded-full bg-red-500/60" />
                 <span className="w-2 h-2 rounded-full bg-yellow-500/40" />
@@ -368,7 +368,7 @@ function BeforeAfterTerminal() {
               <Check className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-mono text-primary uppercase tracking-widest">With llamdrop</span>
             </div>
-            <div className="border border-primary/25 bg-[#040a04] flex flex-col overflow-hidden" style={{ height: "clamp(480px, 70vh, 600px)" }}>
+            <div className="border border-primary/25 bg-[#040a04] flex flex-col overflow-hidden" style={{ height: "clamp(550px, 80vh, 700px)" }}>
               <div className="flex items-center gap-2 px-3 py-2 border-b border-primary/15 bg-black/40 flex-shrink-0">
                 <span className="w-2 h-2 rounded-full bg-red-500/40" />
                 <span className="w-2 h-2 rounded-full bg-yellow-500/40" />
