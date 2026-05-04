@@ -1,4 +1,6 @@
+import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import {
   GitCommit, GitPullRequest, AlertCircle, Users,
   Tag, Activity, Clock, ExternalLink, ArrowLeft, Github
@@ -220,6 +222,7 @@ function Section({ title, icon: Icon, children }: { title: string; icon: React.E
 }
 
 export default function GitHubActivity() {
+  const [, navigate] = useLocation();
   const [repo, setRepo] = useState<any>(null);
   const [commits, setCommits] = useState<any[]>([]);
   const [contributors, setContributors] = useState<any[]>([]);
@@ -295,7 +298,7 @@ export default function GitHubActivity() {
         backdropFilter: "blur(8px)",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <a href="#" onClick={(e) => { e.preventDefault(); history.back(); }} style={{
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate("/"); }} style={{
             display: "flex", alignItems: "center", gap: 6,
             color: "hsl(0 0% 60%)", textDecoration: "none",
             fontFamily: "JetBrains Mono, monospace", fontSize: 12,
