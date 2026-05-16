@@ -1,6 +1,5 @@
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { useLocation } from "wouter";
 import {
   GitCommit, GitPullRequest, AlertCircle, Users,
   Tag, Activity, Clock, ExternalLink, ArrowLeft, Github
