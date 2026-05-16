@@ -20,6 +20,8 @@ function Router() {
 }
 
 function App() {
+  const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+
   useEffect(() => {
     document.documentElement.classList.add('dark');
   }, []);
@@ -27,7 +29,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base="/LLAMdrop-landing">
+        <WouterRouter base={routerBase}>
           <Router />
         </WouterRouter>
         <Toaster />
